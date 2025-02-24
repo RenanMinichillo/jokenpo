@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevClub - Jokenpô</title>
+</head>
+
+<body>
+    <main>
+        <img class="img-loading" src="assets/img/loading.gif" alt="tela de carregamento">
+
+        <div class="container hidden">
+            <div class="game">
+                <h1>JOKENPÔ</h1>
+                <button class="reset">🔄 RESETAR</button>
+                <div class="score">
+                    <div class="box-player">
+                        <p>Jogador</p>
+                        <input id="score-player" type="text" value="0" readonly>
+                        <img id="image-player" class="score-image" src="assets/img/pedra.png" alt="escolha do jogador">
+                    </div>
+                    <h2 id="match-result"></h2>
+
+                    <div class="box-machine">
+                        <p>Máquina</p>
+                        <input id="score-machine" type="text" value="0" readonly>
+                        <img id="image-machine" class="score-image" src="assets/img/pedra.png" alt="escolha da máquina">
+                    </div>
+                </div><!-- SCORE -->
+                <div class="button-box">
+                    <button id="rock" class="choose">
+                        <img class="button-image" src="assets/img/pedra.png" alt="pedra">
+                    </button>
+                    <button id="paper" class="choose">
+                        <img class="button-image" src="assets/img/papel.png" alt="papel">
+                    </button>
+                    <button id="scissors" class="choose">
+                        <img class="button-image" src="assets/img/tesoura.png" alt="tesoura">
+                    </button>
+                </div>
+            </div><!-- GAME -->
+        </div><!-- CONTAINER -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
